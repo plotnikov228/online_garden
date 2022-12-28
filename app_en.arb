@@ -1,0 +1,6 @@
+{
+  "authorization": "Authorization",
+  "@authorization": {
+    "description": "Authorization"
+  }
+}
