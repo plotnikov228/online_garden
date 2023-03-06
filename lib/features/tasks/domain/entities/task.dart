@@ -1,10 +1,15 @@
-import 'package:online_garden/features/tasks/domain/entities/task_type.dart';
+import 'package:online_garden/components/models/frequency_types.dart';
+import 'package:online_garden/components/models/plant_model.dart';
+import 'package:online_garden/components/models/task_model.dart';
+import 'package:online_garden/components/models/task_types.dart';
 
-class Task {
-  String name;
-  String plant;
-  List<String> days;
-  String type;
+class Task extends TaskComponent {
+  @override
+  TaskTypes taskTypes;
+  PlantComponent plant;
+  @override
+  FrequencyTypes frequency;
 
-  Task(this.name, this.type, this.plant, this.days);
+
+  Task(this.taskTypes, this.plant, this.frequency) : super('${taskTypes.text} ${plant.name} in ${frequency}', taskTypes, frequency);
 }

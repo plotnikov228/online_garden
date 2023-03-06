@@ -1,13 +1,19 @@
+import 'dart:io';
 import 'package:online_garden/features/main/domain/entities/plant_model.dart';
 
 class PlantModelImpl extends PlantModel {
-  PlantModelImpl({required super.name, required super.description, required super.image});
+  final String nickname;
+  final String name;
+  final String description;
+  final String image;
+  PlantModelImpl({required this.name, required this.description, required this.image, required this.nickname}) : super(name, description, image, nickname);
 
   factory PlantModelImpl.fromJson(Map<String, dynamic> json) {
     return PlantModelImpl(
         name: json['name'],
         description: json['description'],
-        image: json['image']
+        image: json['image'],
+        nickname: json['nickname']
     );
   }
 
@@ -15,7 +21,8 @@ class PlantModelImpl extends PlantModel {
     return {
       'name' : name,
       'description': description,
-      'image': image
+      'image': image,
+      'nickname': nickname
     };
   }
 

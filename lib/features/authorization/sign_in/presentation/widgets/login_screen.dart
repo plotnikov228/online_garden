@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router_flow/go_router_flow.dart';
 import 'package:online_garden/features/authorization/forgot_password/presentation/presentation/forgot_password_page.dart';
 import 'package:online_garden/features/authorization/sign_in/presentation/bloc/login_bloc/event.dart';
 import 'package:online_garden/features/authorization/sign_up/presentation/presentation/registration_page.dart';
@@ -130,15 +131,11 @@ class _State extends State<LoginScreen> with SingleTickerProviderStateMixin {
                         children: [
                           TextButton(
                               onPressed: () {
-                                Navigator.of(context).push(
-                                    MaterialPageRoute(
-                                        builder: ((context) =>
-                                        const ForgotPasswordPage())));
+                                context.push('/forgot_password');
                               },
                               child: Text('Forgot password?')),
                           TextButton(onPressed: () {
-                            Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: ((context) => const RegistrationPage())), (route) => false);
-
+                            context.push('/registration');
                           }, child: Text('Sign Up'))
                         ],
                       )

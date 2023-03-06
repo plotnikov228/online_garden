@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router_flow/go_router_flow.dart';
 import 'package:online_garden/features/authorization/forgot_password/presentation/presentation/forgot_password_page.dart';
 import 'package:online_garden/features/authorization/sign_in/presentation/presentation/login_page.dart';
 import 'package:online_garden/features/authorization/sign_up/presentation/bloc/registration_bloc/event.dart';
@@ -160,18 +161,11 @@ Widget RegistrationScreen(
                       children: [
                         TextButton(
                             onPressed: () {
-                              Navigator.of(context).push(
-                                  MaterialPageRoute(
-                                      builder: ((context) =>
-                                      const ForgotPasswordPage())));
+                              context.push('/forgot_password');
                             }, child: Text('Forgot password?')),
                         TextButton(
                             onPressed: () {
-                              Navigator.of(context).pushAndRemoveUntil(
-                                  MaterialPageRoute(
-                                      builder: ((context) =>
-                                          const LoginPage())),
-                                  (route) => false);
+                              context.push('/login');
                             },
                             child: Text('Sign In'))
                       ],

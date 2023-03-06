@@ -1,17 +1,27 @@
-import 'package:online_garden/features/main/domain/entities/plant_model.dart';
+import 'package:online_garden/features/plants/domain/entities/plant_model.dart';
 
-class PlantApi extends PlantModel {
-  PlantApi({required super.name, required super.description, required super.image});
+class PlantApi extends Plant {
+  PlantApi(
+      {required super.name,
+      required super.description,
+      required super.imageUrl,
+      required super.nickname});
 
   factory PlantApi.fromJson(Map<String, dynamic> json) {
-    return PlantApi(name: json['name'], description: json['description'], image: json['image_url']);
+    return PlantApi(
+        name: json['name'],
+        description: json['description'],
+        imageUrl: json['image_url'],
+        nickname: json['nickname'] ?? ""
+    );
   }
 
-  Map<String, dynamic> toJson () {
+  Map<String, dynamic> toJson() {
     return {
       'name': name,
       'description': description,
-      'image_url': image
+      'image_url': imageUrl,
+      'nickname': nickname
     };
   }
 }

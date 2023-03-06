@@ -2,7 +2,9 @@
     package="com.example.online_garden">
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
    <application
+        android:usesCleartextTraffic="true"
         android:label="online_garden"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">

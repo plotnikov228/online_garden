@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:online_garden/components/bottom_navigation_bar.dart';
+import 'package:online_garden/components/widgets/bottom_navigation_bar.dart';
 import 'package:online_garden/features/main/presentation/bloc/bloc/bloc.dart';
 import 'package:online_garden/features/main/presentation/bloc/bloc/event.dart';
 

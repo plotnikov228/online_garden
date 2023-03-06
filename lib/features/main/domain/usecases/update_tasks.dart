@@ -1,5 +1,5 @@
 import 'package:online_garden/features/main/domain/entities/task_model.dart';
-import 'package:online_garden/features/main/domain/repositroties/repository.dart';
+import 'package:online_garden/features/main/domain/repositories/repository.dart';
 
 class UpdateTasks {
   final MainRepository repository;

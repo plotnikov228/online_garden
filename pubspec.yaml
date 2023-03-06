@@ -40,14 +40,23 @@ dependencies:
   firebase_auth:
   firebase_core:
   cloud_firestore:
-  go_router:
+  go_router_flow:
   hive:
   hive_flutter:
-
+  skeletons:
+  json_annotation:
+  simple_gradient_text: ^1.2.4
+  url_strategy:
+  image_picker:
+  http:
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  test: ^1.0.0
+  retrofit_generator:
+  json_serializable:
+  build_runner:
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

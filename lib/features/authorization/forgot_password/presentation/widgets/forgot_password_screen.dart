@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router_flow/go_router_flow.dart';
 import 'package:online_garden/features/authorization/forgot_password/presentation/bloc/forgot_password_bloc/event.dart';
 import 'package:online_garden/features/authorization/sign_in/presentation/bloc/login_bloc/event.dart';
 import 'package:online_garden/features/authorization/sign_up/presentation/presentation/registration_page.dart';
@@ -55,7 +56,7 @@ class _State extends State<ForgotPasswordScreen>
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(4, 16, 0, 0),
                 child: IconButton(
-                  onPressed: () => Navigator.of(context).pop(),
+                  onPressed: () => context.pop(),
                   icon: const Icon(Icons.arrow_back),
                 ),
               ),

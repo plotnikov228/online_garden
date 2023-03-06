@@ -1,10 +1,5 @@
-import 'dart:io';
+import 'package:online_garden/components/models/plant_model.dart';
 
-
-class PlantModel{
-  final String name;
-  final String description;
-  final File image;
-
-  PlantModel({required this.name, required this.description, required this.image});
+class PlantModel extends PlantComponent{
+  PlantModel(super.name, super.description, super.image, super.nickname);
 }
