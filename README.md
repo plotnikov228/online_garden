@@ -4,7 +4,7 @@ App for managing your garden. Creating tasks and receiving notifications for the
 
 ## Was used
 
-Back-end: Firebase services
+Back-end: Firebase
 
 DataBase: Hive
 
