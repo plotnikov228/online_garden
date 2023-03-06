@@ -1,16 +1,21 @@
-# online_garden
+# Folium (under development)
 
-A new Flutter project.
+App for managing your garden. Creating tasks and receiving notifications for their execution.
 
-## Getting Started
+## Was used
 
-This project is a starting point for a Flutter application.
+Back-end: Firebase
 
-A few resources to get you started if this is your first Flutter project:
+DataBase: Hive
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+State manager: BLoC
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Router: go_router_flow
+
+Code generator: retrofit
+
+Architecture: Clean Architecture
+
+## Design
+
+Figma: under development
