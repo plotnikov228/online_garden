@@ -6,7 +6,7 @@ App for managing your garden. Creating tasks and receiving notifications for the
 
 Back-end: Firebase
 
-DataBase: Hive
+Local DataBase: Hive
 
 State manager: BLoC
 
